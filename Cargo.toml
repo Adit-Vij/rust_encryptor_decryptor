@@ -1,0 +1,13 @@
+[package]
+name = "rust_encryptor_decryptor"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+colored = "3.0.0"
+pbkdf2 = "0.12.2"
+aes-gcm = "0.10.0"
+rand = "0.9.1"
+base64 = "0.22.1"
+sha2 = "0.10.5"
+hmac = "0.12.1"
