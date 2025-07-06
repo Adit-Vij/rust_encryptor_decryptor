@@ -1,7 +1,5 @@
 use pbkdf2::pbkdf2_hmac_array;
 use sha2::Sha256;
-use rand::{RngCore, rngs::OsRng};
-
 /// Generates a random salt for key derivation.
 /// # Arguments
 /// * `password` - The password to derive the key from.

@@ -7,6 +7,7 @@ use crate::utilities::file_loader::get_file_metadata;
 use crate::utilities::file_loader::get_file_name;
 use crate::utilities::vec_to_str::vec_to_string;
 use crate::cryptography::hasher::sha256_hash;
+use crate::utilities::decor_title::print_decor_title;
 
 use colored::*;
 fn main() {
@@ -23,19 +24,9 @@ fn main() {
     //     Ok(())
     // };
 
-    // Main flow
-        // Print a decorative header
-    println!("{}", "_____________________________________".red());
-    println!("{}","      :::::::::  :::::::::: ::::::::: 
-     :+:    :+: :+:        :+:    :+: 
-    +:+    +:+ +:+        +:+    +:+  
-   +#++:++#:  +#++:++#   +#+    +:+   
-  +#+    +#+ +#+        +#+    +#+    
- #+#    #+# #+#        #+#    #+#     
-###    ### ########## #########       ".red());
-    println!("{}","_____________________________________".red());
+    // Print a decorative header
+    print_decor_title();
 
-    
     // Get file path from user input
     let path = str_input("Enter the file path: ".to_string()).trim().to_string();
     println!("{}", "Loading file: ".blue());
